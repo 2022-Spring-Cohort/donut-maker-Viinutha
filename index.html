@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <title>Donut Clicker</title>
+</head>
+
+<body>
+  <header class="navigation-menu">
+    <div class="game">
+      <div class="aboutgame">About game</div>
+      <div class="gamecontent">very intresting game of vertual donut maker built using javascript,html and css.</div>
+    </div>
+    <div class="inspiration">
+      <div class="inspiredby">InspiredBy</div>
+      <div class="inspirationcontent">this game is inspired by Cookiecliker</div>
+    </div>
+    <div class="contact">
+      <div class="contactby">Contact me</div>
+      <div class="contactlink">connect me through linkedin<a
+          href="https://www.linkedin.com/in/vinuthanadagouni/">linkedin-account</a></div>
+    </div>
+  </header>
+  <section class="section">
+    <audio id="bflat">
+    </audio>
+    <div class="image">
+      <p class="donutclick"><img class="pic" src="./images/noback.png" alt="donut"></button></p>
+      <div>
+        <p class="donutcost">Cost-of-each-donut:1</p>
+      </div>
+    </div>
+    <div class="donutcount">
+      <p id="totalcount">Donut Count:0</p>
+      <p id="donutmultipliercount">Donutmultiplier:0</p>
+      <p id="autoclickerspurchased">Clikspurchased:0</p>
+    </div>
+    <div class="autoclick"><button disabled type="button">autoclick:</button></div>
+    <!-- <div class="autoclick" ><button id="autoclicker" >Autoclicker</button></div><br> -->
+    <div class="donutmultiplierpurchase"><button disabled type="button">multiplier:</button></div>
+    <div class="donutsperclick"></div>
+  </section>
+  <footer>
+    <p>Thank you forplaying game!!! please play again.</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
 </html>

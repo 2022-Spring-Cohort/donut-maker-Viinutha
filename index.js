@@ -17,6 +17,7 @@ let donutCost = document.querySelector(".donutcost");
 //event listner for making donuts when clicked on image of donut
 donutclick.addEventListener("click", () => {
   var bflat = new Audio();
+  spawnSpinningDonut();
   bflat.src = "./sounds/donutcick.mp3";
   document.getElementById(bflat);
   bflat.play();

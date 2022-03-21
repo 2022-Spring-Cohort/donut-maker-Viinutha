@@ -1,0 +1,100 @@
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: none;
+    background-color: rgba(255, 20, 118, 0.144);
+}
+.navigation-menu{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        height: 60px;
+        background: hsl(219, 57%, 82%);
+        color: rgb(34, 10, 10);
+        font-size: larger;  
+    }
+
+ul li {
+    display: inline-block;
+    padding: 0 10px;
+    list-style: none;
+}
+.game,inspiration,contact {
+    position: relative;
+    display: inline-block;
+  }
+  .gamecontent,.inspirationcontent,.contactlink {
+    display: none;
+    position: absolute;
+    background-color:#e6bddfe7;
+    min-width: 160px;
+    margin: auto;
+    z-index: 1;
+  }
+    
+.game:hover .gamecontent{
+    display: block;
+}
+.inspiration:hover .inspirationcontent{
+    display: block;
+}
+.contact:hover .contactlink{
+    display: block;
+}
+button{ 
+    border-style:none;
+    background-color: none;
+}
+.pic{
+    height:3in;
+    background-color: none;
+    background-blend-mode: color;
+    background-color: rgba(255, 20, 118, 0.144);
+}
+p{
+    font-size: larger;
+    color: aliceblue;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#7cc5a3 ;
+    text-align: center;
+    font-family: cursive;
+
+}
+ footer{
+    align-content: center;
+    justify-content: space-between;
+} 
+.donutmultiplierpurchase,.autoclick{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-color: black;
+    
+}
+#canvas{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+
+}
+/* #animationcontainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+  } */
